@@ -35,27 +35,39 @@ body {
   position: relative;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  color: white;
-  padding: 120px;
+  justify-content: flex-end;   /* move to right */
+  align-items: center;         /* keep vertical center */
+  text-align: right;
+  padding-right: 60px;
+
 }
 
 /* Title */
 h1 {
-  font-size: clamp(24px, 5vw, 48px);
+  font-size: clamp(20px, 4vw, 36px);
   font-family: "Times New Roman";
   margin-bottom: 20px;
 }
 
 /* Paragraph */
 p {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
   line-height: 1.6;
-  font-size: clamp(14px, 2.5vw, 18px);
+  font-size: clamp(13px, 2vw, 16px);
 }
+
+@media (max-width: 768px) {
+  .content {
+    justify-content: center;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  p {
+    max-width: 90%;
+  }
+
 </style>
 </head>
 
@@ -75,7 +87,7 @@ p {
 
       We welcome collaborative opportunities.<br><br>
 
-      © TeoHuiHua Architect
+      © 2012 - 2026 TeoHuiHua Architect
       </p>
     </div>
   </div>
