@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>TEOHUIHUA ARCHITECT</title>
+<meta charset="utf-8">
+<title>TEOHUIHUA ARCHITECT</title>
 
-  <style>
-    body {
-      font-family: Verdana;
-      background-image: url("Background graphic.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
-      padding: 40px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Verdana;
+}
 
-    h1 {
-      font-family: "Times New Roman";
-      font-size: 36px;
-    }
+/* Background container */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("Background graphic.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-    p {
-      max-width: 700px;
-      line-height: 1.6;
-    }
-  </style>
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Text container */
+.content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 48px;
+  font-family: "Times New Roman";
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 18px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>TEOHUIHUA ARCHITECT</h1>
+<div class="hero">
+  <div class="content">
+    <div>
+      <h1>TEOHUIHUA ARCHITECT</h1>
 
-<p>
-Collaborative Design Innovation<br><br>
+      <p>
+      Collaborative Design Innovation<br><br>
 
-"To engage and to have plenty of laughters from the way we create space through to the way our users live, work and heal."<br><br>
+      "To engage and to have plenty of laughters from the way we create space through to the way our users live, work and heal."<br><br>
 
-We are an architectural practice based in Sarawak Malaysia with strong global outlook and focuses on evidence-based health design and research, community care, aged care, lean construction and a special interest in 'Tree House' evolution.<br><br>
+      We are an architectural practice based in Sarawak Malaysia with strong global outlook and focuses on evidence-based health design and research, community care, aged care, lean construction and a special interest in 'Tree House' evolution.<br><br>
 
-We welcome collaborative opportunities.<br><br>
+      We welcome collaborative opportunities.<br><br>
 
-© copyright 2012–2026 TeoHuiHua Architect.
-</p>
+      © TeoHuiHua Architect
+      </p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
